@@ -2,7 +2,7 @@
 import { GoogleAuth } from 'google-auth-library';
 import * as f from '@frankbakulov/utils';
 
-export class Fcm {
+export default class Fcm {
 	credentials = null;
 	auth = null;
 
