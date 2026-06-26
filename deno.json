@@ -1,0 +1,26 @@
+{
+	"name": "@frankbakulov/fcm",
+	"version": "0.1.3",
+	"license": "MIT",
+	"exports": "./mod.js",
+	"tasks": {
+		"p": "deno update --latest && deno --allow-all ../../publish.ts && git commit -a -m 'version' && git push && deno publish",
+		"t": "deno --allow-all --watch test.js"
+	},
+	"lint": {
+		"rules": {
+			"exclude": [
+				"no-inner-declarations",
+				"no-var",
+				"prefer-const",
+				"no-explicit-any",
+				"no-import-prefix",
+				"no-case-declarations"
+			]
+		}
+	},
+	"imports": {
+		"@frankbakulov/utils": "jsr:@frankbakulov/utils@^0.8.9",
+		"google-auth-library": "npm:google-auth-library@^10.9.0"
+	}
+}
