@@ -43,7 +43,7 @@ export default class Fcm {
 	 * @param {Object} data
 	 */
 	send(tokens, notification = {}, data = {}) {
-		if (!tokens.length) return [];
+		if (!tokens.length) return Promise.resolve([]);
 
 		return this.accessToken().then(bearerToken => {
 			var url = `https://fcm.googleapis.com/v1/projects/${this.credentials.project_id}/messages:send`,

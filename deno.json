@@ -1,6 +1,6 @@
 {
 	"name": "@frankbakulov/fcm",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"license": "MIT",
 	"exports": "./mod.js",
 	"tasks": {
@@ -20,7 +20,7 @@
 		}
 	},
 	"imports": {
-		"@frankbakulov/utils": "jsr:@frankbakulov/utils@^0.8.9",
-		"google-auth-library": "npm:google-auth-library@^10.9.0"
+		"@frankbakulov/utils": "jsr:@frankbakulov/utils@^0.8.11",
+		"google-auth-library": "npm:google-auth-library@^11.0.0"
 	}
 }
